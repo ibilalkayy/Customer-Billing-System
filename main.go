@@ -94,7 +94,7 @@ func addCustomer() {
 	}
 }
 
-/* Writing customer data to file */
+/* Writing customer data into file */
 func writeFile() {
 	file, err := os.OpenFile("data.csv", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
 	if err != nil {
